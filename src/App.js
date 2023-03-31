@@ -1,4 +1,5 @@
 import "./App.css";
+import Logo from './Assets/VRM PHARM.svg';
 import Home from "./Components/Home";
 
 function App() {

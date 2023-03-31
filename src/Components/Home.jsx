@@ -1,6 +1,7 @@
 import React from 'react'
 import Navigationbar from './Navigationbar'
 
+
 function Home() {
   return (
     <div>
