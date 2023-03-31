@@ -1,12 +1,10 @@
-import React from "react";
-import Navigationbar from "./Navigationbar";
+import React from 'react';
+// import Navigationbar from "./Navigationbar";
 
-const home = () => {
+function home() {
   return (
-    <div className="home-container">
-      <Navigationbar />
-    </div>
-  );
-};
+    <div>home</div>
+  )
+}
 
-export default home;
+export default home
