@@ -1,7 +1,9 @@
-import React from "react";
+import React from 'react'
 
-const Navigationbar = () => {
-  return <div>Navigationbar</div>;
-};
+function Navigationbar() {
+  return (
+    <div>Navigationbar</div>
+  )
+}
 
-export default Navigationbar;
+export default Navigationbar
