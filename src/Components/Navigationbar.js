@@ -11,41 +11,60 @@ import {
   ListItemIcon,
   ListItemText,
 } from "@mui/material";
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { BsCart2 } from "react-icons/bs";
-import { HighOutlineBars3 } from "react-icons/hi2";
-// import Logo from './Assets/VRM PHARM.svg';
+import { HiOutlineBars3 } from "react-icons/hi2";
+import Logo from "../Assets/Logo.svg";
 
 function Navigationbar() {
-
-  const [openMenu,setOpenMenu] = useState(false)
+  const [openMenu, setOpenMenu] = useState(false);
   const menuOptions = [
     {
-      text:"Home",
-      icon:<HomeIcon/>,
+      text: "Home",
+      icon: <HomeIcon />,
     },
     {
-      text:"About",
-      icon:<InfoIcon/>,
+      text: "About",
+      icon: <InfoIcon />,
     },
     {
-      text:"Services",
-      icon:<CommentRoundedIcon/>,
+      text: "Services",
+      icon: <CommentRoundedIcon />,
     },
     {
-      text:"Contact",
-      icon:<PhoneRoundedIcon/>,
+      text: "Contact",
+      icon: <PhoneRoundedIcon />,
     },
     {
-      text:"Cart",
-      icon:<ShoppingCartRoundedIcon/>,
+      text: "Cart",
+      icon: <ShoppingCartRoundedIcon />,
     },
-  ]
-
+  ];
 
   return (
-    <div>Navigationbar</div>
-  )
+    <nav>
+      
+      <div className="nav-logo-container">
+        <img src={Logo} alt="" />
+      </div>
+      
+      <div className="navbar-links-container">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+        <a href="#">
+          <BsCart2 className="navbar-cart-icon" />
+        </a>
+        <button className="primary-button">Oder Now</button>
+        </div>
+
+        <div className="navbar-menu-container">
+          <HiOutlineBars3 onClick={ () => setOpenMenu(true)} />
+        </div>
+
+    </nav>
+  );
 }
 
-export default Navigationbar 
+export default Navigationbar;
