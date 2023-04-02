@@ -7,8 +7,8 @@
  }
 
  img {
-   max-width: 35%;
-   height: 35%;
+   max-width: 40%;
+   height: auto;
  }
   .nav-logo-container{
    display: flex;
@@ -33,7 +33,7 @@
  nav {
    display: flex;
    align-items: center;
-   justify-content: space-between;
+   justify-content: end;
    min-height: 90px;
  }
  .navbar-menu-container {
