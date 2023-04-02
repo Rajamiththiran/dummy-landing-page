@@ -10,7 +10,7 @@
    max-width: 35%;
    height: 35%;
  }
- nav .nav-logo-container{
+  .nav-logo-container{
    display: flex;
    justify-content: right;
    
