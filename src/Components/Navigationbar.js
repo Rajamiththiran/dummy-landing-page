@@ -49,14 +49,14 @@ function Navigationbar() {
       </div>
       
       <div className="navbar-links-container">
-        <a href="#">Home</a>
+        <a href="./Home.js">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
         <a href="#">
           <BsCart2 className="navbar-cart-icon" />
         </a>
-        <button className="primary-button">Oder Now</button>
+        <button className="primary-button">Sign up</button>
         </div>
           
         <div className="navbar-menu-container">
