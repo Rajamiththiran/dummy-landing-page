@@ -44,13 +44,12 @@ function Navigationbar() {
 
   return (
     <nav>
-      
       <div className="nav-logo-container">
         <img src={Logo} alt="" />
       </div>
-      
+
       <div className="navbar-links-container">
-        <a href="./Home.js">Home</a>
+        <a href="#">Home</a>
         <a href="#">About</a>
         <a href="#">Services</a>
         <a href="#">Contact</a>
@@ -58,33 +57,31 @@ function Navigationbar() {
           <BsCart2 className="navbar-cart-icon" />
         </a>
         <button className="primary-button">Sign up</button>
-        </div>
-          
-        <div className="navbar-menu-container">
-          <HiOutlineBars3 onClick={ () => setOpenMenu(true)} />
-        </div>
+      </div>
 
-        <Drawer open ={openMenu} onClose = {() => setOpenMenu(false)} anchor ="right" >
-        <Box sx ={{width: 250}}
-          role = "presentation"
-          onClick = {()=> setOpenMenu(false)}
-          onKeyDown = {() => setOpenMenu(false)}
+      <div className="navbar-menu-container">
+        <HiOutlineBars3 onClick={() => setOpenMenu(true)} />
+      </div>
+
+      <Drawer open={openMenu} onClose={() => setOpenMenu(false)} anchor="right">
+        <Box
+          sx={{ width: 250 }}
+          role="presentation"
+          onClick={() => setOpenMenu(false)}
+          onKeyDown={() => setOpenMenu(false)}
         >
           <List>
-          {menuOptions.map((item) => (
-              <ListItem key={item.text} disablePadding >
+            {menuOptions.map((item) => (
+              <ListItem key={item.text} disablePadding>
                 <ListItemButton>
-                  <ListItemIcon>
-                    {item.icon}
-                  </ListItemIcon>
-                  <ListItemText primary = {item.text} />
+                  <ListItemIcon>{item.icon}</ListItemIcon>
+                  <ListItemText primary={item.text} />
                 </ListItemButton>
               </ListItem>
             ))}
           </List>
         </Box>
-        </Drawer>
-
+      </Drawer>
     </nav>
   );
 }
