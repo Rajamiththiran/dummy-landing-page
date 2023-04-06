@@ -10,7 +10,7 @@ function Home() {
       <Navigationbar />
       <div className="home-banner-container">
         <div className="home-bannerImage-container">
-        <img src={BannerBackground} alt="" />
+          <img src={BannerBackground} alt="" />
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
@@ -23,11 +23,11 @@ function Home() {
             comfort of your own home.
           </p>
           <button className="primary-button">
-            Oder Now <FiArrowRight/>
+            Oder Now <FiArrowRight />
           </button>
         </div>
         <div className="home-image-container">
-        <img src={BannerImage} alt="" />
+          <img src={BannerImage} alt="" />
         </div>
       </div>
     </div>
