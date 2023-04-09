@@ -2,7 +2,7 @@ import "./App.css";
 
 import About from "./Components/About";
 import Home from "./Components/Home";
-
+import Services from "./Components/Services";
 
 
 function App() {
@@ -10,6 +10,7 @@ function App() {
     <div className="App">
       <Home />
       <About/>
+      <Services/>
     </div>
   );
 }
