@@ -9,7 +9,7 @@ const Services = () => {
     {
       image: TakeMedicines,
       title: "Take your Own Brand",
-      text: " We understand that choosing the right medicine brand can be ",
+      text: "We understand that choosing the right medicine brand can be an important decision,which is why we offer a variety of brands to choose from. To select your favorite brand by simply click the brand button",
     },
     {
       image: ChoosePharmacy,
@@ -19,7 +19,7 @@ const Services = () => {
     {
       image: FastDelivery,
       title: "Attain Fast Delivery",
-      text: "Our commitment to our customers is to ensure that they ",
+      text: "Our commitment to our customers is to ensure that they receive their orders in a timely manner. With our fast and reliable delivery service",
     },
   ];
   return (
