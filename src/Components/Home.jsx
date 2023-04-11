@@ -30,7 +30,9 @@ function Home() {
           <img src={BannerImage} alt="" />
         </div>
       </div>
+      <div> </div>
     </div>
+    
   );
 }
 
