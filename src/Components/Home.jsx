@@ -14,7 +14,7 @@ function Home() {
         </div>
         <div className="home-text-section">
           <h1 className="primary-heading">
-            Shop for High-Quality Medications Online.
+            Shop for High-Quality Medications Online. hoo hoo
           </h1>
           <p className="primary-text">
             We believe that healthcare should be easy and convenient. That's why
