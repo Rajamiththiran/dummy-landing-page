@@ -1,11 +1,11 @@
-import React from "react";
+import React, { Component } from "react";
 import { FiArrowRight } from "react-icons/fi";
 import BannerBackground from "../Assets/Home-background.png";
 import BannerImage from "../Assets/Home-img.png";
 import Navigationbar from "./Navigationbar";
 
-function Home() {
-  return (
+class Home extends Component {
+  render() {return (
     <div>
       <Navigationbar />
       <div className="home-banner-container">
@@ -31,7 +31,7 @@ function Home() {
         </div>
       </div>
     </div>
-  );
+  );}
 }
 
 export default Home;

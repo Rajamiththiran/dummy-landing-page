@@ -1,10 +1,11 @@
-import React from "react";
+import { render } from "@testing-library/react";
+import React, { Component } from "react";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 import AboutBackgroundImage from "../Assets/About-background-image.png";
 import AboutBackgroun from "../Assets/About-background.png";
 
-const About = () => {
-  return (
+class About extends Component  {
+  render() {return (
     <div className="about-section-container">
       <div className="about-background-image-container">
         <img src={AboutBackgroun} alt="" />
@@ -30,7 +31,7 @@ const About = () => {
         </div>
       </div>
     </div>
-  );
+  );}
 };
 
 export default About;
